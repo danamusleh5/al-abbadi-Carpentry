@@ -61,67 +61,69 @@
         }
 
         .category-card {
-    position: relative;
-    width: 100%;
-    max-width: 500px; /* Match photo card */
-    height: 700px; /* Set a fixed height for consistency */
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            /* Match photo card */
+            height: 700px;
+            /* Set a fixed height for consistency */
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 
         .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-}
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
 
         .category-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
-}
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
+        }
 
-.category-card:hover img {
-    transform: scale(1.1);
-    filter: brightness(0.8);
-}
+        .category-card:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
 
-.category-card::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-}
+        .category-card::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        }
 
-.category-card h3 {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 15px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.3s ease;
-}
+        .category-card h3 {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.3s ease;
+        }
 
-.category-card:hover h3 {
-    opacity: 1;
-    transform: translate(-50%, -5px);
-}
+        .category-card:hover h3 {
+            opacity: 1;
+            transform: translate(-50%, -5px);
+        }
 
         /* Photos Section */
         .photos {
@@ -381,35 +383,37 @@
         }
 
         /* Update these styles in your CSS */
-#modal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /* Changed from center to stretch */
-    width: 100%;
-    height: 100%;
-    gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: relative;
-    z-index: 1001;
-}
+        #modal-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            /* Changed from center to stretch */
+            width: 100%;
+            height: 100%;
+            gap: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            position: relative;
+            z-index: 1001;
+        }
 
-#image-container {
-    flex: 1;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    max-height: 800px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: flex 0.3s ease; /* Smooth transition when expanding */
-}
+        #image-container {
+            flex: 1;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            max-height: 800px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: flex 0.3s ease;
+            /* Smooth transition when expanding */
+        }
 
         #modal-content img {
             width: 100%;
@@ -426,20 +430,22 @@
         }
 
         #modal-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    min-height: 745px;
-    direction: rtl;
-    transition: all 0.3s ease; /* Smooth transition when hiding */
-}
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            min-height: 745px;
+            direction: rtl;
+            transition: all 0.3s ease;
+            /* Smooth transition when hiding */
+        }
+
         /* Caption Styling */
         #modal-caption {
             font-size: 24px;
@@ -525,21 +531,23 @@
         }
 
         .modal-arrow.prev {
-    left: 10px; /* Adjust position when text container is hidden */
-}
+            left: 10px;
+            /* Adjust position when text container is hidden */
+        }
 
-.modal-arrow.next {
-    right: 10px; /* Adjust position when text container is hidden */
-}
+        .modal-arrow.next {
+            right: 10px;
+            /* Adjust position when text container is hidden */
+        }
 
-/* When text container is hidden, center the arrows */
-#modal-text[style*="display: none"] + .modal-arrow.prev {
-    left: 20px;
-}
+        /* When text container is hidden, center the arrows */
+        #modal-text[style*="display: none"]+.modal-arrow.prev {
+            left: 20px;
+        }
 
-#modal-text[style*="display: none"] + .modal-arrow.next {
-    right: 20px;
-}
+        #modal-text[style*="display: none"]+.modal-arrow.next {
+            right: 20px;
+        }
 
 
         /* Responsive Adjustments */
@@ -581,51 +589,52 @@
         }
 
         /* Add this to your CSS if using a CSS loader */
-#loader::after {
-  content: "";
-  width: 32px;
-  height: 32px;
-  border: 4px solid #ccc;
-  border-top-color: #333;
-  border-radius: 50%;
-  display: inline-block;
-  animation: spin 0.8s linear infinite;
-}
+        #loader::after {
+            content: "";
+            width: 32px;
+            height: 32px;
+            border: 4px solid #ccc;
+            border-top-color: #333;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 0.8s linear infinite;
+        }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-/* Add this to your CSS */
-.modal-dots {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    z-index: 1002;
-}
+        /* Add this to your CSS */
+        .modal-dots {
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 1002;
+        }
 
-.modal-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+        .modal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.modal-dot.active {
-    background-color: #000;
-    transform: scale(1.2);
-}
+        .modal-dot.active {
+            background-color: #000;
+            transform: scale(1.2);
+        }
 
-/* Make sure dots appear above the image */
-.modal-dots {
-    z-index: 1002;
-}
-
+        /* Make sure dots appear above the image */
+        .modal-dots {
+            z-index: 1002;
+        }
     </style>
 </head>
 
@@ -639,20 +648,17 @@
         <!-- Intro -->
         <div id="intro">
             <!-- <div style="display: flex; align-items: center;"> -->
-                <!-- <h1 class="logo" style="margin-top: -700px; color: rgb(255, 255, 255);">מטבחים עבאדי</h1> -->
-                <!-- <img class="logo" src="images/logo2.png" alt="Logo" style="height: 50px; width: auto; margin-top: -700px;"> -->
+            <!-- <h1 class="logo" style="margin-top: -700px; color: rgb(255, 255, 255);">מטבחים עבאדי</h1> -->
+            <!-- <img class="logo" src="images/logo2.png" alt="Logo" style="height: 50px; width: auto; margin-top: -700px;"> -->
 
             <!-- </div> -->
-           <div style="text-align: center; position: relative;">
-  <img 
-    src="images/logo.png" 
-    alt="Logo" 
-    style="max-width: 80%; height: auto; position: relative; top: -240px;"
-  >
-</div>
+            <div style="text-align: center; position: relative;">
+                <img src="images/logo.png" alt="Logo"
+                    style="max-width: 80%; height: auto; position: relative; top: -240px;">
+            </div>
 
 
-            
+
 
         </div>
 
@@ -750,7 +756,7 @@
             <button onclick="goBack()">Back to Categories</button> <!-- Back button -->
 
             <div id="loader" style="display: none; text-align: center; padding: 20px;">
-</div>
+            </div>
             <div class="photos-grid" id="photos-list"></div>
         </section>
     </div>
@@ -814,16 +820,21 @@
                     </span>
                 </p>
             </section>
-
+            <!-- Phone number -->
             <section>
                 <h3 style="text-align: right;">טלפון</h3>
-                <p style="text-align: right;"><a href="#">(052) 524-8410</a></p>
+                <p style="text-align: right;">
+                    <a href="tel:0523230965">0523230965</a>
+                </p>
             </section>
 
             <section>
                 <h3 style="text-align: right;">אימייל</h3>
-                <p style="text-align: right;"><a href="#">Fadelfadel2211@gmail.com</a></p>
+                <p style="text-align: right;">
+                    <a href="mailto:Fadelfadel2211@gmail.com">Fadelfadel2211@gmail.com</a>
+                </p>
             </section>
+
 
             <section>
                 <h3 style="text-align: right;">רשתות חברתיות</h3>
@@ -973,223 +984,223 @@
 } */
 
 
-       // Hardcoded categories with subcategories and sub-subcategories
-const categories = [
-    {
-        name: "פורמייקה",
-        image: "images/kitchen1.jpeg",
-    },
-    {
-        name: "פולימר / צבע בתנור",
-        image: "images/kitchen3.jpeg",
-        
-    },
-];
-let photoCache = {};
+        // Hardcoded categories with subcategories and sub-subcategories
+        const categories = [
+            {
+                name: "פורמייקה",
+                image: "images/kitchen1.jpeg",
+            },
+            {
+                name: "פולימר / צבע בתנור",
+                image: "images/kitchen3.jpeg",
 
-let currentView = "categories"; // Track the current view: "categories", "subcategories", or "subsubcategories"
-let currentCategory = null; // Track the current category
-let currentSubCategory = null; // Track the current subcategory
+            },
+        ];
+        let photoCache = {};
 
-// Function to toggle the back button visibility
-function toggleBackButton() {
-    const backButton = document.getElementById("back-button");
-    if (currentView === "categories") {
-        backButton.style.display = "none"; // Hide back button in main categories
-    } else {
-        backButton.style.display = "block"; // Show back button in subcategories and sub-subcategories
-    }
-}
+        let currentView = "categories"; // Track the current view: "categories", "subcategories", or "subsubcategories"
+        let currentCategory = null; // Track the current category
+        let currentSubCategory = null; // Track the current subcategory
 
-// Function to load main categories
-function loadCategories() {
-    console.log("Loading main categories..."); // Debugging
-    const categoryList = document.getElementById("category-list");
-    categoryList.innerHTML = ""; // Clear existing categories
+        // Function to toggle the back button visibility
+        function toggleBackButton() {
+            const backButton = document.getElementById("back-button");
+            if (currentView === "categories") {
+                backButton.style.display = "none"; // Hide back button in main categories
+            } else {
+                backButton.style.display = "block"; // Show back button in subcategories and sub-subcategories
+            }
+        }
 
-    categories.forEach(category => {
-        const div = document.createElement("div");
-        div.classList.add("category-card");
-        div.innerHTML = `
+        // Function to load main categories
+        function loadCategories() {
+            console.log("Loading main categories..."); // Debugging
+            const categoryList = document.getElementById("category-list");
+            categoryList.innerHTML = ""; // Clear existing categories
+
+            categories.forEach(category => {
+                const div = document.createElement("div");
+                div.classList.add("category-card");
+                div.innerHTML = `
             <img src="${category.image}" alt="${category.name}">
             <h3>${category.name}</h3>
         `;
-        div.onclick = function () {
-    currentCategory = category;
-    showPhotos(category.name);
-};
-        categoryList.appendChild(div);
-    });
+                div.onclick = function () {
+                    currentCategory = category;
+                    showPhotos(category.name);
+                };
+                categoryList.appendChild(div);
+            });
 
-    currentView = "categories"; // Update the current view
-    toggleBackButton(); // Update back button visibility
+            currentView = "categories"; // Update the current view
+            toggleBackButton(); // Update back button visibility
 
-    // Show the categories section and hide the photos section
-    document.querySelector(".categories").style.display = "block";
-    document.getElementById("photos-section").style.display = "none";
-}
+            // Show the categories section and hide the photos section
+            document.querySelector(".categories").style.display = "block";
+            document.getElementById("photos-section").style.display = "none";
+        }
 
-async function showPhotos(categoryName) {
-    console.log("Loading photos...");
+        async function showPhotos(categoryName) {
+            console.log("Loading photos...");
 
-    // Hide the categories section
-    document.querySelector(".categories").style.display = "none";
+            // Hide the categories section
+            document.querySelector(".categories").style.display = "none";
 
-    // Show loader
-    const loader = document.getElementById("loader");
-    loader.style.display = "block";
+            // Show loader
+            const loader = document.getElementById("loader");
+            loader.style.display = "block";
 
-    // Show the photos section
-    const photosSection = document.getElementById("photos-section");
-    photosSection.style.display = "block";
+            // Show the photos section
+            const photosSection = document.getElementById("photos-section");
+            photosSection.style.display = "block";
 
-    // Clear previous photos
-    const photosList = document.getElementById("photos-list");
-    photosList.innerHTML = "";
+            // Clear previous photos
+            const photosList = document.getElementById("photos-list");
+            photosList.innerHTML = "";
 
-    try {
-        const querySnapshot = await db.collection("photos")
-            .where("category", "==", categoryName)
-            .orderBy("timestamp", "desc")
-            .get();
+            try {
+                const querySnapshot = await db.collection("photos")
+                    .where("category", "==", categoryName)
+                    .orderBy("timestamp", "desc")
+                    .get();
 
-        querySnapshot.forEach((doc) => {
-            const data = doc.data();
-            const div = document.createElement("div");
-            div.classList.add("photo-card");
-            div.innerHTML = `
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    const div = document.createElement("div");
+                    div.classList.add("photo-card");
+                    div.innerHTML = `
                 <img src="${data.photos[0]}" alt="Photo" style="cursor: pointer;">
                 <p>${data.caption}</p>
                 <p>Phone: ${data.phone}</p>
             `;
 
-            div.onclick = function () {
-                showPhotoGroup(data.photos, data.caption, data.phone);
-            };
+                    div.onclick = function () {
+                        showPhotoGroup(data.photos, data.caption, data.phone);
+                    };
 
-            photosList.appendChild(div);
-        });
+                    photosList.appendChild(div);
+                });
 
-    } catch (error) {
-        console.error("Error loading photos:", error);
-    } finally {
-        // Hide loader after loading completes (or fails)
-        loader.style.display = "none";
-    }
+            } catch (error) {
+                console.error("Error loading photos:", error);
+            } finally {
+                // Hide loader after loading completes (or fails)
+                loader.style.display = "none";
+            }
 
-    currentView = "photos";
-    toggleBackButton();
-}
+            currentView = "photos";
+            toggleBackButton();
+        }
 
 
-function displayPhotos(photoArray) {
-    const photosList = document.getElementById("photos-list");
-    photosList.innerHTML = "";
+        function displayPhotos(photoArray) {
+            const photosList = document.getElementById("photos-list");
+            photosList.innerHTML = "";
 
-    photoArray.forEach((data) => {
-        const div = document.createElement("div");
-        div.classList.add("photo-card");
-        div.innerHTML = `
+            photoArray.forEach((data) => {
+                const div = document.createElement("div");
+                div.classList.add("photo-card");
+                div.innerHTML = `
             <img src="${data.photos[0]}" alt="Photo" style="cursor: pointer;">
             <p>${data.caption}</p>
             <p>Phone: ${data.phone}</p>
         `;
 
-        div.onclick = function () {
-            showPhotoGroup(data.photos, data.caption, data.phone);
+                div.onclick = function () {
+                    showPhotoGroup(data.photos, data.caption, data.phone);
+                };
+
+                photosList.appendChild(div);
+            });
+        }
+
+
+        function goBack() {
+            if (currentView === "photos") {
+                currentCategory = null;
+                loadCategories();
+            }
+        }
+
+        // Load categories on page load
+        window.onload = function () {
+            loadCategories();
         };
-
-        photosList.appendChild(div);
-    });
-}
-
-
-function goBack() {
-    if (currentView === "photos") {
-        currentCategory = null;
-        loadCategories();
-    }
-}
-
-// Load categories on page load
-window.onload = function () {
-    loadCategories();
-};
 
 
         //------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         let modalDots = [];
         function showPhotoGroup(photos, caption, phone) {
-    modalPhotos = photos;
-    modalCaption = caption || ""; // Set to empty string if null/undefined
-    modalPhone = phone || "";     // Set to empty string if null/undefined
-    modalCurrentIndex = 0;
+            modalPhotos = photos;
+            modalCaption = caption || ""; // Set to empty string if null/undefined
+            modalPhone = phone || "";     // Set to empty string if null/undefined
+            modalCurrentIndex = 0;
 
-    const modalPhoto = document.getElementById("modal-photo");
-    const modalCaptionElement = document.getElementById("modal-caption");
-    const modalPhoneElement = document.getElementById("modal-phone");
-    const modalTextContainer = document.getElementById("modal-text");
-    const imageContainer = document.getElementById("image-container");
+            const modalPhoto = document.getElementById("modal-photo");
+            const modalCaptionElement = document.getElementById("modal-caption");
+            const modalPhoneElement = document.getElementById("modal-phone");
+            const modalTextContainer = document.getElementById("modal-text");
+            const imageContainer = document.getElementById("image-container");
 
-    modalPhoto.src = modalPhotos[modalCurrentIndex];
-    
-    // Update caption and phone elements
-    modalCaptionElement.textContent = modalCaption;
-    modalPhoneElement.textContent = modalPhone ? `Phone: ${modalPhone}` : "";
+            modalPhoto.src = modalPhotos[modalCurrentIndex];
 
-    // Show/hide elements based on content
-    modalCaptionElement.style.display = modalCaption ? "block" : "none";
-    modalPhoneElement.style.display = modalPhone ? "block" : "none";
+            // Update caption and phone elements
+            modalCaptionElement.textContent = modalCaption;
+            modalPhoneElement.textContent = modalPhone ? `Phone: ${modalPhone}` : "";
 
-    // If both are missing, hide the text container and expand the image
-    if (!modalCaption && !modalPhone) {
-        modalTextContainer.style.display = "none";
-        imageContainer.style.flex = "1 1 100%"; // Take full width
-    } else {
-        modalTextContainer.style.display = "flex";
-        imageContainer.style.flex = "1"; // Reset to original size
-    }
+            // Show/hide elements based on content
+            modalCaptionElement.style.display = modalCaption ? "block" : "none";
+            modalPhoneElement.style.display = modalPhone ? "block" : "none";
 
-    createDots();
-    updateDots();
+            // If both are missing, hide the text container and expand the image
+            if (!modalCaption && !modalPhone) {
+                modalTextContainer.style.display = "none";
+                imageContainer.style.flex = "1 1 100%"; // Take full width
+            } else {
+                modalTextContainer.style.display = "flex";
+                imageContainer.style.flex = "1"; // Reset to original size
+            }
 
-    attachArrowListeners();
+            createDots();
+            updateDots();
 
-    const modal = document.getElementById("photo-modal");
-    const overlay = document.getElementById("modal-overlay");
+            attachArrowListeners();
 
-    modal.style.display = "flex";
-    overlay.style.display = "block";
-}
+            const modal = document.getElementById("photo-modal");
+            const overlay = document.getElementById("modal-overlay");
 
-function createDots() {
-    const dotsContainer = document.getElementById("modal-dots");
-    dotsContainer.innerHTML = ""; // Clear existing dots
-    modalDots = []; // Reset dots array
-
-    for (let i = 0; i < modalPhotos.length; i++) {
-        const dot = document.createElement("div");
-        dot.className = "modal-dot";
-        dot.dataset.index = i;
-        dot.addEventListener("click", () => {
-            modalCurrentIndex = i;
-            changePhoto(0); // Change to this photo without moving
-        });
-        dotsContainer.appendChild(dot);
-        modalDots.push(dot);
-    }
-}
-
-function updateDots() {
-    modalDots.forEach((dot, index) => {
-        if (index === modalCurrentIndex) {
-            dot.classList.add("active");
-        } else {
-            dot.classList.remove("active");
+            modal.style.display = "flex";
+            overlay.style.display = "block";
         }
-    });
-}
+
+        function createDots() {
+            const dotsContainer = document.getElementById("modal-dots");
+            dotsContainer.innerHTML = ""; // Clear existing dots
+            modalDots = []; // Reset dots array
+
+            for (let i = 0; i < modalPhotos.length; i++) {
+                const dot = document.createElement("div");
+                dot.className = "modal-dot";
+                dot.dataset.index = i;
+                dot.addEventListener("click", () => {
+                    modalCurrentIndex = i;
+                    changePhoto(0); // Change to this photo without moving
+                });
+                dotsContainer.appendChild(dot);
+                modalDots.push(dot);
+            }
+        }
+
+        function updateDots() {
+            modalDots.forEach((dot, index) => {
+                if (index === modalCurrentIndex) {
+                    dot.classList.add("active");
+                } else {
+                    dot.classList.remove("active");
+                }
+            });
+        }
 
         function changePhoto(direction) {
 
