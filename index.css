@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+  --font-primary: 'Tajawal', sans-serif;
+  --bg-color: #F5F1EA; /* Primary Background */
+  --bg-light: #EBE7DE; /* Slightly darker cream for contrast */
+  --text-main: #2B2B2B; /* Main Text */
+  --text-dark: #1A1A1A;
+  --text-muted: #666666;
+  --header-bg: #8B5A2B; /* Dark Wood Brown for Header */
+  --accent: #C58A45; /* Warm Golden Brown for Buttons */
+  --accent-light: #D9A76A;
+  --highlight: #D4AF37; /* Metallic Gold for Highlights/Icons */
+  --glass-bg: rgba(245, 241, 234, 0.9);
+  --glass-border: rgba(139, 90, 43, 0.15);
+  --card-shadow: 0 10px 30px rgba(43, 33, 24, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  direction: rtl;
+  /* Ensure RTL from the root */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
